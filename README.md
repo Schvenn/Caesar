@@ -128,8 +128,8 @@ The final feature of this script is the -BruteForce, which will read an obfuscat
 
 ## Broken or Missing Header Demonstrations
 
-	• Create a sample file with a broken header for the
-		$string = "Çæšª®Q?l3-µkvdobxkdo~oxmbizd~wo"; $file="file.broken"; Out-File -FilePath $file -InputObject $string demonstration.
+	• Create a sample file with a broken header for the demonstration.
+		$string = "Çæšª®Q?l3-µkvdobxkdo~oxmbizd~wo"; $file="file.broken"; Out-File -FilePath $file -InputObject $string
 	• Decrypt a file with a broken header to screen.
 		caesar "file.broken" 10 -undo
 	• Decrypt a file with a broken header to disk and view the file.
@@ -139,8 +139,8 @@ The final feature of this script is the -BruteForce, which will read an obfuscat
 
 ## Brute Force Demonstrations
 
-	• Create a successful sample file for the brute force
-		caesar "Gaius Julius Caesar was a Roman ruler and his salads taste really good, too." 712100 "caesar.born" demonstration.
+	• Create a successful sample file for the brute force demonstration.
+		caesar "Gaius Julius Caesar was a Roman ruler and his salads taste really good, too." 712100 "caesar.born"
 	• Run the entire 25 character shift against the file in order to attempt recovery, but output to screen only.
 		caesar caesar.born -bruteforce -screen
 	• Brute force the results and save to the default file.
